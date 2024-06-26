@@ -1,0 +1,329 @@
+/* CSS HEX */
+--timberwolf: #dad7cdff;
+--harvest-gold: #c98e10ff;
+--fern-green: #588157ff;
+--hunter-green: #3a5a40ff;
+--dark-green: #032514ff;
+
+--barn-red: #780000ff;
+--fire-brick:  #c1121fff;
+--papaya-whip: #fdf0d5ff;
+--prussian-blue: #003049ff;
+--air-superiority-blue: #669bbcff;
+
+--seasalt: #f8f9faff;
+--antiflash-white: #e9ecefff;
+--platinum: #dee2e6ff;
+--french-gray: #ced4daff;
+--french-gray-2: #adb5bdff;
+--slate-gray: #6c757dff;
+--outer-space: #495057ff;
+--onyx: #343a40ff;
+--eerie-black: #212529ff;
+
+--vanilla: #eae2b7ff;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Poppins", sans-serif; ;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px; /*20*/
+    
+    
+}
+    
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #c98e10ff;
+    
+}
+
+p{
+    color:#c98e10ff ;
+}
+.container{
+max-width: 1300px;
+margin: auto;
+padding-left: 25px;
+padding-right: 25px;
+
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}                
+.col-2{
+    flex-basis:50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+
+}
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 62px;
+    margin: 25px 0;
+
+}
+/*Specifications for button*/
+.btn{
+    display: inline-block;
+    background: #c98e10ff;
+    color: white;
+    padding: 8px  30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: #669bbcff/*#dad7cdff ; Change*/
+}
+.header{
+    /*The line below makes the page with the woman different colours.*/
+    background: #003049ff;/*radial-gradient(#032514ff, #3a5a40ff);*/
+}
+.header .row{
+    margin-top: 5px; /*Check here og=70px*/
+    
+}
+.categories{
+    margin: 70px 0;
+    
+
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+
+.apptext{
+    position: absolute;
+    top:25%;
+    padding: 1000px ;
+    padding-top: 1000px ;
+padding-left:125px ;
+    
+}
+.apptext p{
+    color: white;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left:25px;
+    padding-right: 25px;
+    
+
+}
+
+
+.col-4{
+    flex-basis: 15%; /*because we neeed four columns*/
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s; /*come back*/
+    
+}
+.col-4 img{
+    width: 100%;
+
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black; 
+}
+.title::after{
+    content: '';
+    background:  #c1121fff;/*#c98e10ff ;*/
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0; /*change position of line*/
+    left: 50%;
+    transform: translateX(-50%);/*so that it will be on centre from x axis*/
+}
+h4{
+    color: black;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+
+}
+ .rating {
+    color:  #212529ff;  /*change colour of stars*/
+ }
+ /*p1{
+    color: black;
+ }*/
+ .col-4:hover{
+    transform: translateY(-5px);
+ }
+ /*------offer------*/
+ .offer{
+    background: #003049ff;
+    margin-top: 80px;
+    padding: 30px 0;
+ }
+/*.col-2 .offer-img{
+    padding: 50px;
+} Reduces image size*/
+ small {
+    color: white;
+ }
+ /*--------testimonial--------*/
+.testimonial{
+    padding-top: 100px;
+    background-color: #eae2b7ff;
+
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+    background-color: white;
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 40px, 50px;
+    border-radius: 50%; /*changes the shape of photos.*/
+}
+.testimonial .col-3:hover{
+     transform: translateY(-10px);
+}
+/*fa.fa-quote-left{
+   font-sixe: 34px;
+   color: 
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px, 0;
+    color:
+}*/
+.testimonial.col-3 h3{
+    font-weight: 600;
+    font-size: 16px;
+}
+/*---------brands--------*/
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+   width: 100px;
+   cursor: pointer;
+   filter: grayscale(100%);
+
+}
+.col-5 img:hover{
+    filter: grayscale(0); 
+}
+/*--------FOOTER-----*/
+.footer{
+    background: #ced4daff;
+    padding: 60px 0 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px ;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    height: 1px;
+    margin: 20px 0;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+
+}
+/*-------media query for menu-----*/
+/*@media only screen and (max-width: 800px)/*makes the media querry accessible to a device whose max widthis 880px*/{
+ /*nav ul{
+     position: absolute;
+     top: 70px;
+     left: 0;
+     background: #eae2b7ff;
+     width: 100%;
+ }
+ nav ul li{
+     display: block;
+     margin-right: 50px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ /*nav ul li a{
+    
+ }*/
+./*menu-icon{
+    display: block;
+    cursor: pointer;
+}
+}*/
+
+
+
